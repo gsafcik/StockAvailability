@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <GSC_Stockavailability>
+            <version>0.1.0</version>
+        </GSC_Stockavailability>
+    </modules>
+    
+    <global>
+        <blocks>
+            <stockavailability>
+                <class>GSC_Stockavailability_Block</class>
+            </stockavailability>
+        </blocks>
+        <helpers>
+            <stockavailability>
+                <class>GSC_Stockavailability_Helper</class>
+            </stockavailability>
+        </helpers>
+        <models>
+            <stockavailability>
+                <class>GSC_Stockavailability_Model</class>
+            </stockavailability>
+        </models>
+        <events>
+            <sales_order_creditmemo_save_after>
+                <observers>
+                    <stockavailability>
+                        <class>stockavailability/observer</class>
+                        <method>refundOrderInventory</method>
+                    </stockavailability>
+                </observers>
+            </sales_order_creditmemo_save_after>
+        </events>
+    </global>
+
+    <adminhtml>
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <GSC_Stockavailability>
+                            <title>GSC Stock Availability Fix</title>
+                            <sort_order>10</sort_order>
+                        </GSC_Stockavailability>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <stockavailability>
+                                            <title>Return Positive Quanitity to In Stock</title>
+                                        </stockavailability>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+    
+</config>

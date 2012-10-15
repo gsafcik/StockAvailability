@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <gsc translate="label" module="stockavailability">
+            <label>GSC Extensions</label>
+            <sort_order>9999</sort_order>
+        </gsc>
+    </tabs>
+    <sections>
+        <stockavailability translate="label" module="stockavailability">
+            <label>Stock Availability</label>
+            <tab>gsc</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>300</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <info>
+                    <frontend_model>stockavailability/system_config_info</frontend_model>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                </info>
+            </groups>
+        </stockavailability>
+    </sections>
+</config>
