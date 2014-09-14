@@ -1,4 +1,4 @@
-## StockAvailability
+## Stock Availability
 
 **Short Version:**
 
@@ -26,8 +26,8 @@ Please backup your site and test on a test site/server first!
 Ok, so you've downloaded the Stock Availability module and now you don't have a clue on how to use it. Well, here are the instructions to get you through the thick of it…
 
 1. Retrieve the module code from Github however you desire.
-2. Upload (via FTP client, such as [FileZilla](http://filezilla-project.org/)) the app directory to the root of your Magento install.
-3. If you're logged into your admin panel, please log out and then log back in. Otherwise you will get that pesky _**404, not found**_ message when trying to view the config area.
+2. Upload (via FTP client, such as [FileZilla](http://filezilla-project.org/)) the **app** directory to the root of your Magento install.
+3. If you're logged into your admin panel, please log out and then log back in. Otherwise you will get that pesky _**404, not found**_ message when trying to view the **config** area.
 
 Then navigate to
 
