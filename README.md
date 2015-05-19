@@ -4,6 +4,8 @@
 
 Fixes Magento's Stock Availability issue (out of stock / in stock) when creating a Credit Memo with returned items. Will put Stock Availability status to "In Stock" if items are returned from "Out of Stock" status
 
+![](https://cloud.githubusercontent.com/assets/1588760/7696020/94a463c4-fdb5-11e4-91e0-147b3cf35b36.jpg)
+
 **Long(er) Version**
 
 The Stock Availability Magento module was created to _fix_ something that many people have wanted for a long time. When the quantity of a certain product reaches 0, through sale of that product, the Stock Availability goes to "Out of Stock" automatically. When doing a Credit Memo (Return), Magento will put the quantity of that item back in stock but neglect to put the Stock Availability back to "In Stock". This module changes that.
@@ -11,6 +13,10 @@ The Stock Availability Magento module was created to _fix_ something that many p
 Now, when you do a Credit Memo (Return) with this module installed, if the product's Stock Availability was set to "Out of Stock", then the product will reset to "In Stock" automatically.
 
 Additional credit goes to [Ovidiu](http://stackoverflow.com/users/281258/ovidiu) from [Stackoverflow](http://stackoverflow.com) for helping make this work.
+
+![](https://cloud.githubusercontent.com/assets/1588760/7696018/9498bdbc-fdb5-11e4-8897-5536f30512a9.jpg)
+![](https://cloud.githubusercontent.com/assets/1588760/7696019/949af578-fdb5-11e4-98ae-0e4f2e89b34d.jpg)
+![](https://cloud.githubusercontent.com/assets/1588760/7696021/94a909c4-fdb5-11e4-9a24-b98bd331e169.jpg)
 
 ## Versions Tested
 
