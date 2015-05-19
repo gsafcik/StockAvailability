@@ -23,9 +23,9 @@ Additional credit goes to [Ovidiu](http://stackoverflow.com/users/281258/ovidiu)
 
 Please backup your site and test on a test site/server first!
 
-Ok, so you've downloaded the Stock Availability module and now you don't have a clue on how to use it. Well, here are the instructions to get you through the thick of it…
+Ok, so you'd like to downloaded the Stock Availability module but you don't have a clue how to get and use it. Well, here are the instructions to get you through the thick of it…
 
-1. Retrieve the module code from Github however you desire.
+1. Retrieve the module code from Github however you desire. _Hint: You can always click on "Download ZIP"._
 2. Upload (via FTP client, such as [FileZilla](http://filezilla-project.org/)) the **app** directory to the root of your Magento install.
 3. If you're logged into your admin panel, please log out and then log back in. Otherwise you will get that pesky _**404, not found**_ message when trying to view the **config** area.
 
@@ -39,4 +39,4 @@ for additional information.
 
 That is all. When you initiate a _**Credit Memo**_, Magento will now return the "Stock Availability" to "in stock" if you're returning products from a 0 quantity (to anything greater than 0).
 
-_**Note:**_ There are no additional setting provided with this module.
+_**Note:**_ There are no additional settings provided with this module.
